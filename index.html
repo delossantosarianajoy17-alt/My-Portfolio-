@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariana Joy Delos Santos | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#javagame">Java Code</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <img src="images.jpg" alt="Ariana Joy Delos Santos">
+        
+        <h3>WELCOME TO MY PORTFOLIO</h3>
+        <h1>Ariana Joy Delos Santos</h1>
+        <p>Bachelor of Science in Information Technology<br>First-Year College Student | BSIT 1-C</p>
+        <a href="#about">Discover More</a>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Full Name:</strong> Ariana Joy Sapon Delos Santos</p>
+        <p><strong>Nickname:</strong> Yana</p>
+        <p><strong>Age:</strong> 18</p>
+        <p><strong>From:</strong> Monic, Nampicuan, Nueva Ecija</p>
+        <p><strong>Introduction:</strong> Hello! I'm a first-year Bachelor of Science in Information Technology (BSIT) student at Our Lady of the Sacred Heart College of Guimba. I am passionate about learning technology, exploring new ideas, and developing my skills in programming. I believe that every challenge is an opportunity to learn, improve, and grow.</p>
+    </section>
+
+    <!-- EDUCATIONAL BACKGROUND SECTION -->
+    <section id="education">
+        <h2>Educational Background</h2>
+        
+        <h3>College</h3>
+        <p><strong>Our Lady of the Sacred Heart College, Inc.</strong><br>
+        Bachelor of Science in Information Technology<br>
+        2026 – Present</p>
+
+        <h3>Senior High School</h3>
+        <p><strong>Recuerdo National High School</strong><br>
+        HUMSS Strand<br>
+        2024 – 2026</p>
+
+        <h3>Junior High School</h3>
+        <p><strong>Recuerdo National High School</strong><br>
+        2020 – 2024</p>
+
+        <h3>Elementary</h3>
+        <p><strong>Monic Elementary School</strong><br>
+        2014 – 2020</p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        
+        <ul>
+            <li>Basic HTML & CSS Layouts</li>
+            <li>Basic Java Programming (Arrays, Loops, Tracker Logic, If-Else)</li>
+            <li>Basic Computer Navigation & Document Formatting</li>
+            <li>Willingness to Learn New Technologies</li>
+        </ul>
+    </section>
+
+    <!-- JAVA CODE SECTION -->
+    <section id="javagame">
+        <h2>Java Program — Household Waste Analyzer</h2>
+        <p><strong>Program Name:</strong> Household Waste Analyzer & Tracker Game</p>
+        <p><strong>Description:</strong> A Java console application that stores 7-day waste weights in a double[] array, calculates totals and averages, identifies peak days, sorts weights in descending order, and gives real-time High/Low warning feedback.</p>
+        
+        <pre style="background-color: #f4f4f4; padding: 12px; border-radius: 8px; text-align: left; overflow-x: auto; font-family: monospace; font-size: 10px; color: #333; border: 1px solid #ddd;"><code>import java.util.Scanner;
+import java.util.Arrays;
+
+public class HouseholdWasteAnalyzer {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double[] weights = new double[7];  
+        String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};  
+        double total = 0;  
+          
+        System.out.println("=== HOUSEHOLD WASTE ANALYZER & TRACKER GAME ===");  
+          
+        System.out.print("Set your Daily High Waste Limit (kg): ");  
+        double warningLimit = scanner.nextDouble();  
+        System.out.println("--------------------------------------------------");  
+        System.out.println("Game started! Tracking daily waste for 7 days...\n");  
+          
+        for (int i = 0; i < 7; i++) {  
+            while (true) {  
+                System.out.print("Enter waste weight for " + days[i] + " (kg): ");  
+                double weight = scanner.nextDouble();  
+                  
+                if (weight >= 0) {  
+                    weights[i] = weight;  
+                    total += weight;  
+                      
+                    if (weight > warningLimit) {  
+                        System.out.println("   --> ⚠️ HIGH WASTE ALERT! (" + weight + " kg exceeds limit)");  
+                    } else {  
+                        System.out.println("   --> ✅ LOW WASTE! Good eco-friendly day.");  
+                    }  
+                    System.out.println();  
+                    break;  
+                } else {  
+                    System.out.println("Invalid input! Please enter a nonnegative value.");  
+                }  
+            }  
+        }  
+          
+        double average = total / 7;  
+          
+        double maxWeight = weights[0];  
+        int maxIndex = 0;  
+        for (int i = 1; i < weights.length; i++) {  
+            if (weights[i] > maxWeight) {  
+                maxWeight = weights[i];  
+                maxIndex = i;  
+            }  
+        }  
+          
+        System.out.println("================ RESULT SUMMARY ================");  
+        System.out.printf("Total Waste Produced: %.2f kg\n", total);  
+        System.out.printf("Average Daily Weight: %.2f kg\n", average);  
+        System.out.println("Peak Waste Day: " + days[maxIndex] + " (" + maxWeight + " kg)");  
+          
+        double[] sortedWeights = weights.clone();  
+        Arrays.sort(sortedWeights);  
+          
+        System.out.println("\n----------- WASTE WEIGHTS (DESCENDING) -----------");  
+        for (int i = sortedWeights.length - 1; i >= 0; i--) {  
+            System.out.printf("%.2f kg\n", sortedWeights[i]);  
+        }  
+        System.out.println("==================================================");  
+          
+        scanner.close();  
+    }
+}</code></pre>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Ariana Joy Delos Santos. All Rights Reserved.</p>
+        <p>Designed with HTML & CSS in TrebEdit</p>
+    </footer>
+
+</body>
+</html>
