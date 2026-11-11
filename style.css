@@ -1,0 +1,366 @@
+/* =====================================
+   ARIANA JOY - PERSONAL PORTFOLIO
+   THEME: LIGHT PINK, WHITE & BLACK
+===================================== */
+
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #FCE4EC; /* Light Pink Background para sa buong page */
+    color: #212121;
+    line-height: 1.8;
+}
+
+/* NAVIGATION BAR (Black) */
+
+nav {
+    background-color: #000000;
+    padding: 22px 15px;
+    text-align: center;
+}
+
+nav h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 7px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #F8BBD0;
+}
+
+/* HOME SECTION (Light Pink background na may profile picture sa itaas) */
+
+#home {
+    background-color: #FCE4EC; /* Light Pink background */
+    color: #000000;
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Pwesto at sukat ng profile picture sa itaas (Home Section) */
+#home img {
+    display: block;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #000000; /* Black ring border */
+    margin: 0 auto 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#home h3 {
+    color: #D81B60;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+#home h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+#home p {
+    color: #333333;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #000000; /* Black Button */
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#home a:hover {
+    background-color: #D81B60;
+    transform: translateY(-3px);
+}
+
+/* GENERAL CONTENT SECTIONS (White Boxes) */
+
+section {
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #000000;
+    letter-spacing: 1px;
+}
+
+section h3 {
+    color: #212121;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+section p {
+    margin-bottom: 14px;
+    color: #424242;
+}
+
+/* ABOUT ME SECTION (Itinatago na natin dito ang litrato dahil nasa itaas na sa #home) */
+
+#about {
+    text-align: left;
+}
+
+#about img {
+    display: none; 
+}
+
+#about p {
+    max-width: 100%;
+}
+
+/* EDUCATION SECTION */
+
+#education h3 {
+    color: #000000;
+    border-left: 4px solid #000000;
+    padding-left: 12px;
+}
+
+/* SKILLS AND HOBBIES */
+
+#skills ul,
+#hobbies ul {
+    padding-left: 25px;
+}
+
+#skills li,
+#hobbies li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+    color: #333333;
+}
+
+#skills li::marker,
+#hobbies li::marker {
+    color: #000000;
+}
+
+/* CAREER GOAL */
+
+#career {
+    border-top: 5px solid #000000;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+    border-top: 5px solid #000000;
+}
+
+.project-card {
+    background-color: #FCE4EC;
+    padding: 28px;
+    border-radius: 14px;
+    border-left: 5px solid #000000;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.project-label {
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    color: #000000;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.project-card h4 {
+    color: #212121;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+    color: #333333;
+}
+
+.project-details {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.project-details p {
+    margin-bottom: 5px;
+}
+
+.project-card ul {
+    padding-left: 25px;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+}
+
+/* JAVA DOWNLOAD BUTTON */
+
+.project-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    padding: 13px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.project-button:hover {
+    background-color: #D81B60;
+    transform: translateY(-3px);
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+#contact a:hover {
+    color: #D81B60;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        padding: 18px 10px;
+    }
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 5px 6px;
+    }
+
+    #home {
+        padding: 40px 18px;
+    }
+
+    #home img {
+        width: 95px;
+        height: 95px;
+    }
+
+    #home h1 {
+        font-size: 26px;
+    }
+
+    #home p {
+        font-size: 14px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-button {
+        display: block;
+        text-align: center;
+        padding: 13px 15px;
+    }
+
+    footer {
+        padding: 22px 12px;
+    }
+  }
